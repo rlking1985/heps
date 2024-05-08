@@ -6,11 +6,78 @@
     name="viewport"
     content="width=device-width, initial-scale=1.0"
   >
-  <title>Document</title>
+
+  <title>Year 1 Homework</title>
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+  >
+  <link
+    rel="icon"
+    type="image/png"
+    href="favicon.ico"
+  />
+  <link
+    rel="stylesheet"
+    href="index.css"
+  />
 </head>
 
 <body>
-  <h1>Init</h1>
+  <div class="header">
+    <h1>My Homework</h1>
+
+  </div>
+  <div class="container">
+    <div class="site reading-eggs">
+      <img
+        data-url="https://sso.readingeggs.com/login"
+        src="images/reading-eggs.png"
+        alt="Reading Eggs"
+      />
+    </div>
+    <div class="site mathletics">
+      <img
+        data-url="https://studentportal.mathletics.com/class/46/1/home"
+        src="images/mathletics.png"
+        alt="Mathletics"
+      />
+    </div>
+    <div class="site multilit">
+      <img
+        data-url="https://library.multilit.com/student-dashboard"
+        src="images/multilit.png"
+        alt="MultiLit"
+      />
+    </div>
+    <div class="site study-ladder">
+      <img
+        data-url="https://www.studyladder.com.au/student"
+        src="images/study-ladder.png"
+        alt="Study Ladder"
+      />
+    </div>
+    <div class="site seesaw">
+      <img
+        data-url="https://app.seesaw.me"
+        src="images/seesaw.png"
+        alt="Seesaw"
+      />
+    </div>
+    <div class="site typing-club">
+      <img
+        data-url="https://www.typingclub.com"
+        src="images/type-club.png"
+        alt="Type Club"
+      />
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll('.site img').forEach(image => image.addEventListener('click', () => window.open(image.getAttribute('data-url'))));
+
+  </script>
 </body>
 
 </html>
