@@ -1,7 +1,6 @@
 /* Base styles - single column for mobile devices */
 body {
   background: lightsteelblue;
-  font-family: Comic Sans MS;
   width: 100%;
   text-align: center;
 }
@@ -21,7 +20,7 @@ body {
 }
 
 .header h1 {
-  font-family: "Comic Sans MS", cursive, sans-serif; /* Use Comic Sans font */
+  font-family: arial, "Comic Sans MS", cursive, sans-serif; /* Use Comic Sans font */
   font-size: 36px; /* Make the font large and bold */
   margin: 0; /* Remove default margin */
   color: black; /* Set the text color */
